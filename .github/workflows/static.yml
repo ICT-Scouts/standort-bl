@@ -1,0 +1,29 @@
+name: Deploy static content via FTP
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Additional build or processing steps can be added here if necessary
+
+      - name: FTP Deploy
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Force SSL encryption if required (set to 'true' or 'false')
+          forceSsl: 'false'
+          # Local directory (default is the entire repository)
+          localDir: '.'
+          remoteDir: ${{ secrets.FTP_REMOTE }}
+          options: "--delete"
