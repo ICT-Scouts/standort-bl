@@ -1,18 +1,245 @@
-body{
-
+.content{
+    max-width: 500px;
+    margin: auto;
+}
+#s1{
+    background-image: linear-gradient(#1c85ca,#1e1e1e);
+    width:100%;
+    height:60rem;
+    position: absolute;
+    padding:0;
+}
+#btn4{
+ visibility: visible;
+}
+#s2{
+    position: absolute;
+    top:50rem;
+    background-color: #1e1e1e;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+    height: 60rem;
+    width: 100%;
+} 
+#btn3{
+    display: none;
+}
+#video{
+    display: none;
+}
+#MitFamilie{
+    display: none;
+}
+#ski{
+    display: none;
+}
+#bombe{
+    display: none;
+}
+#judo{ 
+    display: none;
+}
+#luffy{
+    display: none;
+}
+#AboutUs{
+    width: 20rem;
+    height: 45rem;
+    transition: width 1s,  box-shadow 1s   ;
+}
+#text{
+    visibility: visible;
 }
 
-nav{
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+.details{
+    background-color: #1e1e1e;
+    border-radius: 5rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+#btnDIV{
+    width: 20rem;
+    height: 45rem;
+    transition: width 1s, box-shadow 1s;
+}
+#TextbtnDIV{
+    visibility: hidden;
+}
+#btn1{
+    visibility: hidden;
+}
+#hobby{
+    width: 20rem;
+    height: 45rem;
+    transition: width 1s, box-shadow 1s;
+}
+#btn2{
+    visibility: hidden;
+}
+#d2{
+    width: 30rem;
+    height: 45rem;
+}
+#d3{
+    width: 30rem;
+    height: 45rem;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1000%;
+    margin-left: 0;
+    margin-top: 15rem;
+    opacity: 100%;
+    animation: show 2s ease-in-out;
+    text-align: center;
+} 
+@keyframes show{
+    0%{opacity: 0;
+        scale: 0;
+    }
+100%{opacity: 100%;
+scale: 100%;}
+
+}
+.container{
+    background-color: white;
+    position: relative;
+    z-index: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content:space-between; 
+    margin-top: 7rem;
+    border-radius: 5rem;
+    padding: 2vw;
+    
+}
+#container{
+    width: 83vw;
+    height: 45rem;
+    margin-left: 6.5vw;
+}
+.containerUp{
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    margin:0;
+}
+.btn:hover{
+    color: white;
+    animation: rainbow 3s linear infinite ;
+}
+.btnVer2:hover{
+    color: white;
+    animation: rainbow 3s linear infinite ;
+}
+.btn:active{
+    background-color:#009bff ;
+    color: white;
+    box-shadow: 0px 0px 89px 20px #009bff;
+    animation: rainbow 3s linear infinite ;
+    scale: 90%;
+}
+.btnVer2:active{
+    background-color:#009bff ;
+    color: white;
+    box-shadow: 0px 0px 89px 20px #009bff;
+    animation: rainbow 3s linear infinite ;
+    scale: 90%;
+}
+#AboutUs:hover{
+    box-shadow: 0px 0px 89px 20px #009bff;
+    width: 40rem;
 }
 
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
+
+
+#btnDIV:hover{
+    box-shadow: 0px 0px 89px 20px #009bff;
+    width: 40rem;
+
+}
+#hobby:hover{
+    box-shadow: 0px 0px 89px 20px #009bff;
+    width: 40rem;
+}
+@keyframes rainbow{
+    100%,0%{
+        background-color: rgb(255,0,0);
+        box-shadow: 0px 0px 89px 20px rgb(255,0,0);
+        
+    }
+    8%{
+        background-color: rgb(255,127,0);
+        box-shadow: 0px 0px 89px 20px rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+        box-shadow: 0px 0px 89px 20px rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+        box-shadow: 0px 0px 89px 20px rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+        box-shadow: 0px 0px 89px 20px rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+        box-shadow: 0px 0px 89px 20px rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+        box-shadow: 0px 0px 89px 20px rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+        box-shadow:  0px 0px 89px 20px rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+        box-shadow: 0px 0px 89px 20px rgb(0,0,255); 
+    }
+    75%{
+        background-color: rgb(127,0,255);
+        box-shadow: 0px 0px 89px 20px rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+        box-shadow: 0px 0px 89px 20px rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+        box-shadow: 0px 0px 89px 20px rgb(255,0,127);
+    }
+} 
+.btn{
+    background-color: white;
+    border-radius: 2rem;
+    border: #009bff;
+    color: #1e1e1e;
+    width: 15rem;
+    height: 5rem;
+    
+}
+.btnVer2{
+    background-color: #1e1e1e;
+    border-radius: 2rem;
+    border: #009bff;
+    color: white;
+    width: 15rem;
+    height: 5rem
+}
+.icons{
+    text-align: center;
+    margin-left:1rem;
+}
+.hobbies{
+    margin-top:1rem;
 }
